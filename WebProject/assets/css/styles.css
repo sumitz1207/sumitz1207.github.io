@@ -1,0 +1,167 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6e6e6;
+  min-height:100%;
+}
+
+/* Operates when on small screens to make white background and change labels of the navbar drop down to white (on red background) */
+@media only screen and (max-width: 767px) {
+  /* Set background color to white on small screens */
+  body {
+    background-color: #fff;
+  }
+  #navbarlabel2 {
+    color:rgb(240, 235, 235)
+  }
+}
+
+
+/* Sets nav bar to red background and white text */
+.navbar-custom {
+  background-color: rgb(236, 31, 31);
+}
+
+#navbarlabel {
+  color:rgb(240, 235, 235)
+}
+/* Sets the "Latitute" title to blue background and white text */
+#titlebutton {
+  height: 60px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-left: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  background: #092cf5;
+}
+
+/* When hovering over the title add visual indicator */
+#titlebutton:hover {
+  /* Visual */
+  opacity: 0.6;
+}
+
+/* add margins and float left for main pic in the index page */
+
+#mainpic {
+  float: left;
+  width: 180px;
+  height: 180px;
+  margin-top: 17px;
+  margin-right: 17px;
+}
+
+/* add padding for nav bar */
+
+.navbar-right-custom {
+  padding-top: 6px;
+  padding-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+/* add visual indicater for navbar hovering, red color */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #dd0e0e;
+}
+
+/* when in small screen change visuals */
+@media only screen and (max-width: 767px) {
+  .navbar-header {
+    background-color: #dd0e0e;
+  }
+
+  #titlebutton {
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: #dd0e0e;
+  }
+}
+
+
+/* Make the description titles like "Humidity" red text, bold */
+.titles {
+  margin-bottom: 33px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #dd0e0e;
+}
+  /* Make the text for each description white text */
+.paragraphs {
+
+  padding: 30px;
+  margin-top: 32px;
+  background-color: rgb(240, 235, 235);
+}
+
+.paragraphs > p {
+  padding-top: 20px;
+
+  font-size: 16px;
+  line-height: 30px;
+  color: rgb(32, 29, 29);
+}
+
+
+
+/* Change padding in the case of small screen */
+@media only screen and (max-width: 767px) {
+  .paragraphs {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+/* make background of visualizations (2x2 image panel) blue and add padding */
+#photo-visualizations {
+  width: 100%;
+  padding: 30px 30px 43px;
+  margin-top: 32px;
+  background-color: rgb(46, 0, 153);
+}
+
+/* make text color for photo visualization text red  */
+.photo-vis-text {
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #dd0e0e;
+}
+
+.visualization-pic {
+  width: 140px;
+  height: 140px;
+}
+
+/* make visual indicator for visualization images when hovering */
+.visualization-pic:hover {
+  opacity: 0.6;
+}
+
+
+.comparison-image:hover {
+  opacity: 0.6;
+}
+
+  /* For table header make background blue and text white */
+
+thead {
+  background-color: #1d0fdfe7;
+  color:rgb(240, 235, 235);
+}

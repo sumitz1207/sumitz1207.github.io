@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="titlebutton">Latitude</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" id="navbarlabel" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a id="navbarlabel2" href="visualizations/temp.html">Max Temperature</a></li>
+                  <li><a id="navbarlabel2" href="visualizations/humidity.html">Humidity</a></li>
+                  <li><a id="navbarlabel2" href="visualizations/cloudiness.html">Cloudiness</a></li>
+                  <li><a id="navbarlabel2" href="visualizations/wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a id="navbarlabel" href="comparison.html">Comparison</a></li>
+              <li><a id="navbarlabel" href="data.html">Data</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="paragraphs">
+            <h1 class="titles">Summary: Latitude vs. X</h1>
+            <hr class="description-hr"/>
+            <img src="assets/images/Fig1.png" alt="" id="mainpic"/>
+            <p>For this project, we analyzed the different weather phenomenon according to the latitude of different world cities. We pulled data from OpenWeatherMap API and assembled a dataset for 500 cities.</p>
+            <p>With Matplotlib, we used the city weather data to graph a variety of plots according to each city's latitude. These weather patterns include temperature, cloudiness, wind speed, and humidity. This site displays the OpenWeatherMap city weather data and the weather maps derived from that data. Also included are explanations of any noticable trends and correlations of city weather and latitude.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+
+          <!-- 4x4 pictures for each of the weather patterns with links to each corresponding page -->
+          <section id="photo-visualizations">
+            <div class="imageNav-content">
+              <h2 class="photo-vis-text">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="visualization-pic"></a>
+                <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" class="visualization-pic"></a>
+                <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="visualization-pic"></a>
+                <a href="visualizations/wind.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="visualization-pic"></a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </section>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
